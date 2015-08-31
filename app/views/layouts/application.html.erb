@@ -9,6 +9,9 @@
 <body>
 	<%= render "/layouts/navbar" %>
 
+<!-- 
+  <h1><%= link_to "logout", logout_path, method: :delete %></h1><br> -->
+
 	<div class="container-fluid">
 		<% flash.each do |message_type, message| %>
 	    	<div class="alert alert-<%= message_type %>"><%= message %></div>

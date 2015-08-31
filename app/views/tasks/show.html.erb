@@ -2,7 +2,7 @@
 <p><%= @task.duedate%></p>
 <p><%= @task.content%></p>
 <p><%= @task.location%></p>
-
+<p><%= image_tag @task.image.url(:medium) %></p>
 
 <%= link_to 'Edit task', edit_task_path %>
 
